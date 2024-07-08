@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Movie Recommendation system</title>
+    <!-- css loader -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+    <!-- icon loader -->
+    <link rel="icon" type="image/png" href="static/images/HL.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="main-nav">
+                <!-- websitelogo -->
+                <div id="movie-logo">
+                    <img src="/static/images/websitelogo.png" alt="image not ava..." srcset="">
+                </div>
+
+                <!-- form  -->
+                <div id="input-space">
+                    <form action="/" id="movie-form">
+                        <input type="text" name="movie" id="input-movie" placeholder="Search movie on TMDB">
+                        <button type="button" id="search-button">
+                            <img  id="search-img"  src="/static/images/search.png" alt="image not ava..." srcset="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="movie-searched"></div>
+        <div id="suggested-movies"></div>
+        <div id="movie-descprition"></div>
+    </section>
+    
+</body>
+</html>

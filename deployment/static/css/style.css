@@ -1,0 +1,103 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.13) 100%), #000;
+    margin: 0; /* To remove default margin */
+    height: 100vh; /* Ensure it covers the full viewport height */
+}
+
+nav{
+    background-color: #121212;
+    height: 90px;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#main-nav {
+    width: 85%;
+    height: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#movie-logo{
+    width: 15%;
+    height:100% ;
+    /* border: 2px solid blue; */
+}
+
+#input-space{
+    width: 85%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+}
+
+#movie-logo img{
+    height: 100%;
+}
+
+#movie-form{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: -22px;
+}
+
+#input-movie{
+    width: 90%;
+    padding: 4px 10px;
+    border-radius: 5px;
+    color: #A7A7A7;
+    font-family: K2D;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#search-button{
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    right: -20px;
+    top: -2px;
+}
+
+#search-img{
+    height: 40px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    margin: auto;
+    gap: 5%;
+}
+
+#movie-searched{
+    border: 2px solid red;
+}
+
+#suggested-movies{
+    border: 2px solid red;
+}
+
+#movie-descprition{
+    border: 2px solid red;
+}
