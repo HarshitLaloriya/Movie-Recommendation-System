@@ -80,6 +80,7 @@ nav{
 
 #search-img{
     height: 40px;
+    transition: transform 0.2s ease-in-out;
 }
 
 section{
@@ -328,9 +329,11 @@ section{
     align-items: center;
 }
 
+
 #big-play-img{
     margin-left: 20px;
     height: 9vh;
+    transition: transform 1.5s ease-out;
 }
 
 #searched-movie-name{
@@ -349,11 +352,46 @@ section{
 }
 
 #first-movie-name, #second-movie-name, #third-movie-name{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
+    display: flex;
     bottom: 2vh;
     height: 6vh;
     width: 39vh;
+    /* background-image: url('images/playbutton.png'); */
+}
+
+.small-play-img{
+    height: 4vh;
+    margin: 6px;
+    transition: transform 0.2s ease-out;
+}
+
+.small-box{
+    border-radius: 5px 0px 0px 5px;
+    background: rgba(217, 217, 217, 0.48);
+    /* border: 2px solid red; */
+    /* align-items: center; */
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    height: 100%;
+    width: 100%;
+    margin-left: 15px;
+
+}
+
+#first-name, #second-name, #third-name{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.response-bar img{
+    transition: transform 0.2s ease-out ;
 }
 
 /* width */
@@ -375,3 +413,14 @@ section{
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+
+  
+  #search-img:hover {
+    transform: scale(1.1) rotate(20deg); /* rotate the image 10 degrees on hover */
+  }
+
+  #big-play:hover, .small-play-img:hover, .response-bar img:hover{
+    transform: scale(1.1);
+  }
+
