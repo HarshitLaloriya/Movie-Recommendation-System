@@ -9,6 +9,7 @@ body {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.13) 100%), #000;
     margin: 0; /* To remove default margin */
     height: 100vh; /* Ensure it covers the full viewport height */
+    overflow: hidden;
 }
 
 nav{
@@ -114,6 +115,7 @@ section{
 
 #suggested-movies{
     /* border: 2px solid red; */
+    width: 39vh;
 }
 
 #recommended-movies{
@@ -126,6 +128,7 @@ section{
 
 #movie-descprition{
     /* border: 2px solid red; */
+    height: 75vh;
 }
 
 #details-box{
@@ -302,10 +305,11 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
-}
+    position: relative;
+    bottom: 68px;
+} 
 
-#dev-by p{
+ #dev-by p{
     color: #FFF;
     font-family: K2D;
     font-size: 28px;
@@ -316,8 +320,40 @@ section{
 
 
 #play-data{
+    background: rgba(61, 61, 61, 0.46);
+    position: relative;
+    bottom: 125px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+
+#big-play-img{
+    margin-left: 20px;
+    height: 9vh;
+}
+
+#searched-movie-name{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+#first, #second, #third{
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+#first-movie-name, #second-movie-name, #third-movie-name{
     border: 2px solid red;
     position: absolute;
+    bottom: 2vh;
+    height: 6vh;
+    width: 39vh;
 }
 
 /* width */
