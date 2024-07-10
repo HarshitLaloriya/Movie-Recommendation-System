@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
 
+    <!-- # FONTS LINKS FROM GOOGLE FONTS -->
+
     <!-- Tomorrow -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +25,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <!-- Website Title  -->
     <title>Movie Recommendation system</title>
+
     <!-- css loader -->
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+
     <!-- icon loader -->
     <link rel="icon" type="image/png" href="static/images/HL.png">
 </head>
@@ -53,39 +58,62 @@
 
     <section>
 
+
+        <!-- reco/searched movie -->
         <div id="movie-searched">
-            <p id="small-heading">YOUR SEARCH</p>
-            <img id="searched-img" src="/static/images/pirates.jpg" alt="image not ava .." srcset="">
+
+            <!-- Static Heading -->
+            <p id="small-heading">RECOMMENDED</p>
+
+            <!-- Default Recommendation -->
+            <img id="searched-img" src="https://image.tmdb.org/t/p/w500//mx2IHsrdLVgqCTB149H6WONjyqM.jpg" alt="image not ava .." srcset="">
             <div id="play-data">
-                <a id="big-play" href="https://quillbot.com/" target="_blank"><img id="big-play-img" src="/static/images/playbutton.png" alt="img not ava ..." srcset=""></a>
+                <a id="big-play" href="https://movies.disney.com/pirates-of-the-caribbean-at-worlds-end" target="_blank"><img id="big-play-img" src="/static/images/playbutton.png" alt="img not ava ..." srcset=""></a>
                 <p id="searched-movie-name">Pirates of the Caribbean: At World's End</p>
             </div>
+
         </div>
 
+
+        <!-- Recommended Movie's section  -->
         <div id="suggested-movies">
+
+            <!-- Static Heading -->
             <p id="small-heading">YOU MAY LIKE</p>
+
+            <!-- first suggested movies -->
             <div id="first">
-                <img id="recommended-movies" src="/static/images/the dark knight.jpg" alt="img not ava .." srcset="">
+
+                <img id="recommended-movies" class="THE-FIRST" src="https://image.tmdb.org/t/p/w500///xfKot7lqaiW4XpL5TtDlVBA9ei9.jpg" alt="img not ava .." srcset="">
+                
                 <div id="first-movie-name">
-                        <a id="first_movie_url" href="https://quillbot.com/" target="_blank"><img class="small-play-img"  src="/static/images/playbutton.png" alt="img not ava ..." srcset=""></a>
+                        <a id="first_movie_url" href="http://www.thedarkknightrises.com/" target="_blank"><img class="small-play-img"  src="/static/images/playbutton.png" alt="img not ava ..." srcset=""></a>
                         <div class="small-box">
                             <p id="first-name">The Dark Knight Rises</p>
                         </div>
                 </div>
             </div>
+
+            <!-- second suggested movie -->
             <div id="second">
-                <img id="recommended-movies" src="/static/images/avatar.jpg" alt="img not ava .." srcset="">
+
+                <img id="recommended-movies" class="THE-SECOND" src="https://image.tmdb.org/t/p/w500////gxnvX9kF7RRUQYvB52dMLPgeJkt.jpg" alt="img not ava .." srcset="">
+                
                 <div id="second-movie-name">
-                    <a id="second_movie_url" href="https://quillbot.com/" target="_blank"><img class="small-play-img" src="/static/images/playbutton.png" alt="img not ava ..." srcset=""></a>
+                    <a id="second_movie_url" href="https://www.avatar.com/movies/avatar" target="_blank"><img class="small-play-img" src="/static/images/playbutton.png" alt="img not ava ..." srcset=""></a>
                     <div class="small-box">
                         <p id="second-name">Avatar</p>
                     </div>
                 </div>
             </div>
+
+            <!-- third suggested movie -->
             <div id="third">
-                <img id="recommended-movies" src="/static/images/dk.jpg" alt="img not ava .." srcset="">
+
+                <img id="recommended-movies" class="THE-THIRD" src="https://image.tmdb.org/t/p/w500//3KamG1pZ3RDEASLFb8JXv1w7Gnk.jpg" alt="img not ava .." srcset="">
+                
                 <div id="third-movie-name">
-                    <a id="third-movie-url" href="https://quillbot.com/" target="_blank"><img class="small-play-img" src="/static/images/playbutton.png" alt="img not ava ..." srcset=""></a>
+                    <a id="third_movie_url" href="https://www.google.com/search?q=the+iceman" target="_blank"><img class="small-play-img" src="/static/images/playbutton.png" alt="img not ava ..." srcset=""></a>
                     <div class="small-box">
                         <p id="third-name">The Iceman</p>
                     </div>
@@ -93,10 +121,18 @@
             </div>
         </div>
 
+
+        <!-- Searched Movie Details  -->
         <div id="movie-descprition">
+
+            <!-- Static Heading -->
             <p id="small-heading">DETAILS</p>
+
+            <!-- All Details div -->
             <div id="details-box">
                 <p id="overview-heading">Overview</p>
+
+                <!-- overview of movie -->
                 <div id="overview-box">
                     <p id="overview">Captain Barbossa, long believed to be dead, has come back to life and is headed to the edge of the Earth with Will Turner and Elizabeth Swann. But nothing is quite as it seems.</p>
                 </div>
@@ -105,6 +141,7 @@
                     <div id="title-box">
                         <p id="title-heading">Title</p>
                     </div>  
+                    <!-- title of the movie -->
                     <div id="show-title">
                         <p id="title">Pirates of the Caribbean: At World's End</p>
                     </div>  
@@ -114,16 +151,20 @@
                     <div id="tagline-box">
                         <p id="tagline-heading">Tagline</p>
                     </div>  
+                    <!-- tagline of the movie -->
                     <div id="show-tagline">
                         <p id="tagline">At the end of the world, the adventure begins.</p>
                     </div>  
                 </div>
 
+                <!-- to show Rating  -->
                 <div id="rating-box">
                     <img id="rating-img" src="/static/images/ratings.png" alt="image not ava ...." srcset="">
+                    <!-- rating of the movie -->
                     <p id="rating">7.5</p>
                 </div>
 
+                <!-- # MY LINKS -->
                 <div class="response-bar">
                     <a href="https://www.linkedin.com/in/harshit-laloriya"  target="_blank"><img src="static/images/nav icons/linked in.png"  alt=""></a>
             
@@ -139,6 +180,8 @@
         </div>
     </section>
 
+
+    <!-- footer of the page -->
     <footer>
         <div id="dev-by">
             <p>Developed by</p>
@@ -146,26 +189,85 @@
         </div>
     </footer>
 
+
+    <!-- # THE SPECIAL RECIPE :)  -->
     <script>
         document.getElementById('search-button').addEventListener('click', function() {
             var movieTitle = document.getElementById('input-movie').value;
             fetch('/predict?movie=' + movieTitle)
             .then(response => response.json())
             .then(data => {
-                for (const key in data) {
-                if (data.hasOwnProperty(key)) {
-                console.log(key, data[key]);
-                }
-            }
-            
+                console.log(data["output"]);    // for checking purpose
 
-            }).catch(error => console.error('Error fetching data:', error));
+                // # IF - ELSE //
+                
+                // if The movie not found then this part executes
+                if (data['output'] === 'None') {
+                    document.getElementById('input-movie').placeholder = 'Movie not Found';
+                    document.getElementById('input-movie').value = '';
+
+                    // effects 
+                    document.getElementById('input-movie').classList.add('error');
+                    document.getElementById('input-movie').classList.remove('found');
+                }
+                
+                
+                // if the movie found then this executes
+                else{
+                        // effect
+                        document.getElementById('input-movie').classList.add('found');
+                        
+                        // The first key : value of the json (using it to change the searched image and other attributes)
+                        let searched = data[0];
+                        
+                        // Change in static heading
+                        document.getElementById('small-heading').innerHTML = 'YOUR SEARCH';
+                    
+                        var anchor = document.getElementById('big-play');
+                        // Change the href attribute
+                        anchor.href = searched['homepage'];
+
+                        var image = document.getElementById('searched-img');
+                        // Change the src attribute
+                        image.src = searched['poster_path'];
+                        document.getElementById('searched-movie-name').innerHTML = searched['title'];
+                        document.getElementById('title').innerHTML = searched['title'];
+                        document.getElementById('overview').innerHTML = searched['overview'];
+                        document.getElementById('tagline').innerHTML = searched['tagline'];
+                        document.getElementById('rating').innerHTML = searched['vote'].toFixed(2);
+
+                        
+                        // Object to store classed or ids 
+                        let myDictLet = {
+                        1: ['.THE-FIRST', 'first_movie_url', 'first-name'],
+                        2: ['.THE-SECOND', 'second_movie_url', 'second-name'],
+                        3: ['.THE-THIRD', 'third_movie_url', 'third-name']
+                        };
+
+
+                        // LOOP TO CHANGE RECOMMENDED
+                        for (var i = 1; i <= 3; i++) {
+                            let suggested = data[i]
+
+                            // // # image source 
+                            var image = document.querySelector(myDictLet[i][0]);
+                            image.src = suggested['banner'];
+
+                            // // # anchor link
+                            var anchor = document.getElementById(myDictLet[i][1]);
+                            anchor.href = suggested['homepage'];
+                        
+                            // // # title
+                            document.getElementById(myDictLet[i][2]).innerHTML = suggested['title'];
+
+                        }
+                    }
+
+            })
+            .catch(error => console.error('Error:', error));
 
 
         });
-
-    
     </script>
-
 </body>
 </html>
